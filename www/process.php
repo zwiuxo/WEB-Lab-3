@@ -27,5 +27,7 @@ $_SESSION['pass_count'] = $count;
 $line = "$name; $count; $type; $car; $bag\n";
 file_put_contents("data.txt", $line, FILE_APPEND);
 
+setcookie("last_client", $name, time() + 3600, "/"); 
+
 header("Location: index.php");
 exit();
