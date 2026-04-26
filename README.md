@@ -5,7 +5,7 @@
 ## ⚙️ Как запустить проект
 1. Склонировать репозиторий:
 ```bash
-git clone https://github.com
+git clone https://github.com/zwiuxo/WEB-Lab-3
 cd WEB-Lab-3
 ```
 2. Запустить контейнеры:
