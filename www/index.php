@@ -8,6 +8,12 @@
 <body>
     <h1>Управление заказами </h1>
 
+    <?php if(isset($_COOKIE['last_client'])): ?>
+        <p style="color: green; font-weight: bold;">
+            Рады видеть вас снова, <?= htmlspecialchars($_COOKIE['last_client']) ?>!
+        </p>
+    <?php endif; ?> 
+
     <?php if(isset($_SESSION['errors'])): ?>
         <ul style="color:red;">
             <?php foreach($_SESSION['errors'] as $error): ?>
